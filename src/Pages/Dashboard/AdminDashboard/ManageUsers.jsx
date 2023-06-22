@@ -8,7 +8,7 @@ const ManageUsers = () => {
 
   const handleChangeRole = (user, role) => {
     const token = localStorage.getItem("access-token");
-    const url = `http://localhost:5000/users/role/?id=${user._id}&role=${role}`;
+    const url = `https://cricket-starts-server.vercel.app/users/role/?id=${user._id}&role=${role}`;
     fetch(url, {
       method: "PATCH",
       headers: {
@@ -50,7 +50,7 @@ const ManageUsers = () => {
 
   const handleSwalConfirm = (user) => {
     const token = localStorage.getItem("access-token");
-    const url = `http://localhost:5000/users?id=${user._id}`;
+    const url = `https://cricket-starts-server.vercel.app/users?id=${user._id}`;
     fetch(url, {
       method: "DELETE",
       headers: {

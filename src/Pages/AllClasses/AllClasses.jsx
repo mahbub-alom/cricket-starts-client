@@ -63,12 +63,16 @@ const AllClasses = () => {
 
       const token = localStorage.getItem("access-token");
       axios
-        .post("http://localhost:5000/classes/selected", classData, {
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `bearer ${token}`,
-          },
-        })
+        .post(
+          "https://cricket-starts-server.vercel.app/classes/selected",
+          classData,
+          {
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `bearer ${token}`,
+            },
+          }
+        )
         .then((response) => {
           const data = response.data;
           if (data.insertedId) {

@@ -20,7 +20,7 @@ const useSelectedClasses = () => {
         },
       };
       const res = await axios.get(
-        `http://localhost:5000/classes/selected?email=${user?.email}`,
+        `https://cricket-starts-server.vercel.app/classes/selected?email=${user?.email}`,
         config
       );
       return res.data;

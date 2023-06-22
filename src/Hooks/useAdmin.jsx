@@ -12,7 +12,7 @@ const useAdmin = () => {
     queryFn: async () => {
       const token = localStorage.getItem("access-token");
       const res = await axios.get(
-        `http://localhost:5000/users/admin/${user?.email}`,
+        `https://cricket-starts-server.vercel.app/users/admin/${user?.email}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

@@ -12,7 +12,7 @@ const useInstructorRole = () => {
     queryFn: async () => {
       const token = localStorage.getItem("access-token");
       const res = await axios.get(
-        `http://localhost:5000/users/instructor/${user?.email}`,
+        `https://cricket-starts-server.vercel.app/users/instructor/${user?.email}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

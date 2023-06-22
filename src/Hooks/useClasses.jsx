@@ -13,11 +13,14 @@ const useClasses = () => {
     enabled: !loading && !!user?.email,
     queryKey: ["classes"],
     queryFn: async () => {
-      const res = await fetch("http://localhost:5000/classes", {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
+      const res = await fetch(
+        "https://cricket-starts-server.vercel.app/classes",
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
       return res.json();
     },
   });

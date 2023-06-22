@@ -20,7 +20,7 @@ const useDeniedClasses = () => {
         },
       };
       const res = await axios.get(
-        "http://localhost:5000/classes/denied",
+        "https://cricket-starts-server.vercel.app/classes/denied",
         config
       );
       return res.data;

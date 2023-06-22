@@ -20,7 +20,7 @@ const useEnrolledClasses = () => {
         },
       };
       const res = await axios.get(
-        `http://localhost:5000/payments/enrolled/student?email=${user?.email}`,
+        `https://cricket-starts-server.vercel.app/payments/enrolled/student?email=${user?.email}`,
         config
       );
       return res.data;

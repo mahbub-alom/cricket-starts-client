@@ -9,7 +9,9 @@ const useAllClass = () => {
   } = useQuery({
     queryKey: ["allClass"],
     queryFn: async () => {
-      const res = await axios.get("http://localhost:5000/classes/approved");
+      const res = await axios.get(
+        "https://cricket-starts-server.vercel.app/classes/approved"
+      );
       return res.data;
     },
   });

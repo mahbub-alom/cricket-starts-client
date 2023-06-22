@@ -9,7 +9,9 @@ const useTopClasses = () => {
   } = useQuery({
     queryKey: ["topClasses"],
     queryFn: async () => {
-      const res = await axios.get("http://localhost:5000/classes/popular");
+      const res = await axios.get(
+        "https://cricket-starts-server.vercel.app/classes/popular"
+      );
       return res.data;
     },
   });

@@ -20,7 +20,7 @@ const usePaymentHistory = () => {
         },
       };
       const res = await axios.get(
-        `http://localhost:5000/payments/history?email=${user?.email}`,
+        `https://cricket-starts-server.vercel.app/payments/history?email=${user?.email}`,
         config
       );
       return res.data;

@@ -69,7 +69,7 @@ const UpdateClass = () => {
 
     axios
       .patch(
-        "http://localhost:5000/classes/update",
+        "https://cricket-starts-server.vercel.app/classes/update",
         { classData },
         {
           headers: {

@@ -56,7 +56,7 @@ const AddAClass = () => {
   const handleSwalFireWithUpdate = (classData) => {
     const token = localStorage.getItem("access-token");
 
-    fetch("http://localhost:5000/classes", {
+    fetch("https://cricket-starts-server.vercel.app/classes", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
