@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS */
+.active {
+    color: #646CFF;
+    font-weight: 600;
+    background-color: rgb(240, 243, 255);
+    border-left: 2px solid #646CFF;
+    border-right: 2px solid #646CFF;
+}
+
+*{
+    color:#ff00ffb0
+}
